@@ -1,0 +1,93 @@
+.admin-container {
+    position: relative;
+    z-index: 1;
+    input {
+        // width: 300px;
+        height: 20px;
+        padding: 5px 0;
+    }
+
+    .input-item {
+        height: 90px;
+        .error-input {
+            color: red;
+        }
+    }
+
+    select {
+        padding: 8px;
+    }
+    button {
+        padding: 5px 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    table, th, td {
+        border: solid 1px black;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    .container-admin {
+        display: block;
+        .container-form {
+            display: block;
+
+        }
+
+    }
+
+    table {
+        table-layout: fixed;
+        select {
+            padding: 8px;
+        }
+        input {
+            width: 200px;
+            padding: 5px;
+        }
+        th, td {
+            height: 70px;
+        }
+        th {
+            background-color: #ccc;
+        }
+        .id {
+            width: 80px;
+        }
+        .action {
+            width: 150px;
+        }
+        
+        .username {
+            width: 280px;
+        }
+
+        .password {
+            width: 280px;
+        }
+
+        .permission {
+            width: 100px;
+        }
+        .level {
+            width: 60px;
+        }
+        
+        .action {
+            .action-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                > * {
+                    padding: 5px;
+                    width: 40px;
+                    margin: 5px;
+                    border: none;
+                }
+            }
+        }
+    }
+
+}

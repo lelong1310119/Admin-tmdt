@@ -1,0 +1,140 @@
+.product-container {
+
+    .add-btn {
+        padding:5px;
+        margin: 10px 0;
+        position: relative;
+        z-index: 1;
+    }
+    .back-form {
+        position: fixed;
+        z-index: 3;
+        display: flex;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        .modal-form {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.25);
+        }
+        .container-addproduct {
+            position: relative;
+            display: block;
+            width: 600px;
+            height: 480px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            h1 {
+                text-align: center;
+            }
+
+            label {
+                margin-left: 50px;
+            }
+            .form-footer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                button {
+                    margin: 10px;
+                    padding: 5px;
+                }
+            }
+            .form-container {
+                display: flex;
+                > * {
+                    display: block;
+                    flex: 1;
+                }
+                input, select {
+                    display: flex;
+                    width: 150px;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px;
+                    margin: 10px auto;
+                }
+                select {
+                    width: 175px;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px;
+                    margin: 10px auto;
+                }
+            }
+        }
+    }
+    table, th, td {
+        border: solid 1px black;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    table {
+        table-layout: fixed;
+        th, td {
+            height: 70px;
+        }
+        th {
+            background-color: #ccc;
+        }
+        .id {
+            width: 40px;
+        }
+        .name {
+            width: 80px;
+        }
+        .price {
+            width: 100px;
+        }
+        .description {
+            width: 100px;
+        }
+        .category {
+            width: 100px;
+        }
+        .type {
+            width: 50px;
+        }
+
+        .total {
+            width: 100px;
+        }
+        .status {
+            width: 100px;
+        }
+        .img {
+            width: 180px;
+        }
+        .action {
+            width: 150px;
+        }
+        
+        
+        .action {
+            .action-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                > * {
+                    position: relative;
+                    z-index: 1;
+                    padding: 5px;
+                    width: 40px;
+                    margin: 5px;
+                    border: none;
+                }
+            }
+        }
+    }
+
+}
